@@ -1,0 +1,7 @@
+<h1>Lista de Tarefas</h1>
+
+<ul>
+  @for (task of tasks; track task.id) {
+    <app-task [task]="task"></app-task>
+  }
+</ul>
