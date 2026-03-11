@@ -3,17 +3,15 @@
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 12px;
+  width: 12vw;
+  max-height: 25vh;
 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.task-main {
-  display: flex;
-  gap: 12px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .task-title {
@@ -27,9 +25,41 @@
   color: #777;
 }
 
-.task-actions button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 16px;
+.task-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+
+    &.complete {
+      background-color: #22c55e;;
+    }
+
+    &.edit {
+      background-color: #3b82f6;
+    }
+
+    &.delete {
+      background-color: #ef4444;
+    }
+
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+
+  .material-icons {
+    font-size: 15px;
+  }
 }

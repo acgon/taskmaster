@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TASKS_MOCK } from '../task/data/tasks.mock';
-import { NgFor } from '@angular/common';
 import { Task } from "../task/task";
 
 @Component({

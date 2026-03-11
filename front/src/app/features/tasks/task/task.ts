@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { required } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-task',
@@ -9,4 +8,8 @@ import { required } from '@angular/forms/signals';
 })
 export class Task {
   @Input({required: true}) task: any;
+
+  executarAcao() {
+    alert("Está funcionando.");
+  }
 }
