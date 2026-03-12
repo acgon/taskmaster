@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TaskModel } from '../../data/models/task.model';
 
 @Component({
   selector: 'app-task',
@@ -7,7 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './task.scss',
 })
 export class Task {
-  @Input({required: true}) task: any;
+  task!: TaskModel;
+
+  @Input({ required: true })
 
   executarAcao() {
     alert("Está funcionando.");

@@ -1,20 +1,22 @@
-export const TASKS_MOCK = [
+import { TaskModel } from "../models/task.model";
+
+export const TASKS_MOCK: TaskModel[] = [
   {
     id: 1,
     title: 'Estudar Angular',
     description: 'Revisar componentes',
-    status: 3
+    status: 'done'
   },
   {
     id: 2,
     title: 'Treinar TypeScript',
     description: 'Praticar tipagem',
-    status: 1
+    status: 'todo'
   },
   {
     id: 3,
     title: 'Ler documentação',
     description: 'Angular Signals',
-    status: 2
+    status: 'doing'
   }
 ];

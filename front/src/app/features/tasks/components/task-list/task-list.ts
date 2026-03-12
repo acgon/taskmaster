@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TASKS_MOCK } from '../task/data/tasks.mock';
-import { Task } from "../task/task";
+import { TASKS_MOCK } from '../../data/mocks/tasks.mock';
+import { Task } from "../../components/task/task";
 
 @Component({
   selector: 'app-task-list',
