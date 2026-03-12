@@ -2,6 +2,6 @@
 
 <ul>
   @for (task of tasks; track task.id) {
-    <app-task [task]="task"></app-task>
+    <app-task [task]="task" (delete)="apagarTarefa($event)"></app-task>
   }
 </ul>

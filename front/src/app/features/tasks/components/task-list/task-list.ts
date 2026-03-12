@@ -8,6 +8,11 @@ import { Task } from "../../components/task/task";
   templateUrl: './task-list.html',
   styleUrl: './task-list.scss',
 })
+
 export class TaskList {
   tasks = TASKS_MOCK;
+
+  apagarTarefa(id: number) {
+    this.tasks = this.tasks.filter(task => task.id !== id);
+  }
 }
