@@ -29,11 +29,17 @@ export class TaskComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result) Object.assign(this.task, result);
+      if (result) {
+        setTimeout(() => {
+          Object.assign(this.task, result);
+        })
+      } 
     });
   }
 
   apagarTarefa() {
-    this.delete.emit(this.task.id);
+    const confirmar = confirm("Deseja apagar esta tarefa?");
+
+    if (confirmar) this.delete.emit(this.task.id);
   }
 }

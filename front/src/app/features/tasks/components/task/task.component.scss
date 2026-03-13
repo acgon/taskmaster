@@ -23,6 +23,8 @@
   margin: 0;
   font-size: 14px;
   color: #777;
+  max-height: 50%;
+  overflow-y: auto;
 }
 
 .task-actions {
