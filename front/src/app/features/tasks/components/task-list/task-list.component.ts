@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { TASKS_MOCK } from '../../data/mocks/tasks.mock';
-import { Task } from "../../components/task/task";
+import { TaskComponent } from "../task/task.component";
 
 @Component({
   selector: 'app-task-list',
-  imports: [Task],
-  templateUrl: './task-list.html',
-  styleUrl: './task-list.scss',
+  imports: [TaskComponent],
+  templateUrl: './task-list.component.html',
+  styleUrl: './task-list.component.scss',
 })
 
-export class TaskList {
+export class TaskListComponent {
   tasks = TASKS_MOCK;
 
   apagarTarefa(id: number) {
