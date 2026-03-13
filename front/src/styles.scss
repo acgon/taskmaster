@@ -39,3 +39,14 @@ body {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.edit-task-dialog .mat-mdc-dialog-surface {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  width: 12vw;
+  max-height: 25vh;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}

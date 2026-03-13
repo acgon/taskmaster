@@ -24,7 +24,7 @@ export class TaskComponent {
 
   editarTarefa() {
     const dialogRef = this.dialog.open(EditTaskComponent, {
-      width: '12vw',
+      panelClass: 'edit-task-dialog',
       data: {...this.task}
     });
 
