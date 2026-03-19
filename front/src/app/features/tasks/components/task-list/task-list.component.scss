@@ -1,0 +1,30 @@
+h3 {
+    margin-left: 43px;
+    align-self: flex-start;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 14vw;
+}
+
+p {
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+}
+
+.title-todo {
+    color: #af7c4c;
+}
+
+.title-doing {
+    color: #a5af4c;
+}
+
+.title-done {
+    color: #4CAF50;
+}
