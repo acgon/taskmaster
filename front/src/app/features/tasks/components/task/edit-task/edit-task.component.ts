@@ -25,7 +25,8 @@ export class EditTaskComponent {
       id: Date.now(),
       title: '',
       description: '',
-      status: 'todo'
+      status: 'todo',
+      order: 999999
     };
   }
 
