@@ -12,6 +12,7 @@ import { EditTaskComponent } from './edit-task/edit-task.component';
 })
 export class TaskComponent {
   @Input({ required: true }) task!: TaskModel;
+  @Input() last!: number;
   @Output() delete = new EventEmitter<number>();
 
   constructor(private dialog: MatDialog) {}
@@ -19,7 +20,7 @@ export class TaskComponent {
   avancarTarefa() {
     if (this.task.status == 'todo') this.task.status = 'doing';
     else if (this.task.status == 'doing') this.task.status = 'done';
-    console.dir(this.task.status);
+    this.task.order = this.last+1;
   }
 
   editarTarefa() {

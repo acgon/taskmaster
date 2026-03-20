@@ -4,12 +4,12 @@
   (cdkDropListDropped)="onDrop($event)" 
   class="container"
 >
-  <h3 [ngClass]="'title-' + status">{{ titulo }}</h3>
+  <h3>{{ titulo }}</h3>
   @if (filteredTasks.length !== 0) {
     <ul>
       @for (task of filteredTasks; track task.id) {
         <div cdkDrag [cdkDragData]="task">
-          <app-task [task]="task" (delete)="apagarTarefa($event)"></app-task>
+          <app-task [task]="task" [last]="tasks.length" (delete)="apagarTarefa($event)"></app-task>
         </div>
       }
     </ul>

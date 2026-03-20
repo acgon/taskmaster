@@ -1,6 +1,5 @@
 h3 {
-    margin-left: 43px;
-    align-self: flex-start;
+    color: #5c5c5c;
 }
 
 .container {
@@ -8,23 +7,18 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 14vw;
+    width: 16vw;
+
+    background-color: #e0e0e0;
+    border-radius: 12px;
+}
+
+ul {
+    margin-left: -40px;
 }
 
 p {
     font-size: 12px;
     font-style: italic;
-    color: #888;
-}
-
-.title-todo {
-    color: #af7c4c;
-}
-
-.title-doing {
-    color: #a5af4c;
-}
-
-.title-done {
-    color: #4CAF50;
+    color: #ececec;
 }
