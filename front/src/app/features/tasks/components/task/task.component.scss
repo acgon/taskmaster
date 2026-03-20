@@ -25,7 +25,8 @@
   margin: 0;
   font-size: 14px;
   color: #777;
-  max-height: 50%;
+  width: 100%;
+  overflow-wrap: break-word;
   overflow-y: auto;
 }
 
