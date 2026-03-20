@@ -2,12 +2,11 @@ import { Component, Input } from '@angular/core';
 import { TaskComponent } from "../task/task.component";
 import { TaskStatus } from '../../data/models/task-status.type';
 import { TaskModel } from '../../data/models/task.model';
-import { NgClass } from '@angular/common';
 import { CdkDrag, CdkDragDrop, CdkDropList } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-task-list',
-  imports: [TaskComponent, NgClass, CdkDropList, CdkDrag],
+  imports: [TaskComponent, CdkDropList, CdkDrag],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.scss',
 })
