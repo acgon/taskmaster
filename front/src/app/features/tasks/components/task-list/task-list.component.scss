@@ -1,5 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+}
+
 h3 {
     color: #5c5c5c;
+}
+
+.add-task-btn {
+    width: 20px;
+    height: 20px;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    border: none;
+    color: #5c5c5c;
+    background:none;
+
+    cursor: pointer;
 }
 
 .container {
@@ -11,6 +33,10 @@ h3 {
 
     background-color: #e0e0e0;
     border-radius: 12px;
+}
+
+.header:hover .add-task-btn {
+    opacity: 1;
 }
 
 ul {

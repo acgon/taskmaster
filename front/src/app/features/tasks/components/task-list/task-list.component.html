@@ -4,7 +4,13 @@
   (cdkDropListDropped)="onDrop($event)" 
   class="container"
 >
-  <h3>{{ titulo }}</h3>
+  <span class="header">
+    <h3>{{ titulo }}</h3>
+    <button class="add-task-btn" (click)="criarTarefa(status)">
+      <span class="material-icons">add_circle</span>
+    </button>
+  </span>
+  
   @if (filteredTasks.length !== 0) {
     <ul>
       @for (task of filteredTasks; track task.id) {
