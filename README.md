@@ -17,4 +17,4 @@ Este é o taskmaster, meu primeiro projeto criado por iniciativa 100% própria c
 - Sistema de autenticação com OAuth 2
 
 ## Instruções para rodar o projeto
-Para executar o projeto, clone o repositório e abra um terminal dentro da pasta "front". Depois disso, instale as dependências através do comando \textbf{npm install}. Após a devida instalação das dependências, execute o comando \textbf{ng serve}. Quando a mensagem \textit{"Local:   http://localhost:4200/"} aparecer escrita no seu terminal, a aplicação já estará disponível neste endereço.
+Para executar o projeto, clone o repositório e abra um terminal dentro da pasta "front". Depois disso, instale as dependências através do comando __npm install__. Após a devida instalação das dependências, execute o comando __ng serve__. Quando a mensagem _Local:   http://localhost:4200/_ aparecer escrita no seu terminal, a aplicação já estará disponível neste endereço.
