@@ -11,9 +11,11 @@ Este é o taskmaster, meu primeiro projeto criado por iniciativa 100% própria c
 - Trocar o estado das tarefas
 - Possibilidade de mover as tarefas usando drag and drop (tanto para reordenar quanto para trocar de estado)
 
+## Recursos em fase de desenvolvimento
+- Back-end feito em C#
+
 ## Recursos pretendidos para o futuro
 - Persistência dos dados em um banco PostgreSQL
-- Back-end feito em Java (Spring Boot)
 - Sistema de autenticação com OAuth 2
 
 ## Instruções para rodar o projeto
