@@ -80,6 +80,22 @@ namespace back.Controllers
             return Ok(response);
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateTask(Guid id, [FromBody] CreateTaskDto updatedTask)
+        {
+            var oldTask = await _appDbContext.Tasks.FindAsync(id);
+
+            if (oldTask == null) return NotFound("Tarefa inexistente.");
+
+            oldTask.Title = updatedTask.Title;
+            oldTask.Description = updatedTask.Description;
+            oldTask.Status = updatedTask.Status;
+            
+            await _appDbContext.SaveChangesAsync();
+
+            return StatusCode(201, oldTask);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTask(Guid id)
         {
